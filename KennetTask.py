@@ -120,4 +120,9 @@ tick_button = WebDriverWait(driver, 10).until(
 )
 tick_button.click()
 
+
+add_patient_button = WebDriverWait(driver, 10).until(
+    EC.element_to_be_clickable((By.XPATH, "//button[.//span[contains(text(),'Add Patient')]]"))
+)
+add_patient_button.click()
 input("wait")
