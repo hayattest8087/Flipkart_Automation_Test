@@ -88,6 +88,7 @@ for _ in range(4):
 dropdown__Add_Tests.send_keys(Keys.RETURN)
 
 
+
 dropdown_Add_discounts = WebDriverWait(driver,10).until(EC.element_to_be_clickable((By.CSS_SELECTOR,"div.MuiSelect-root")))
 dropdown_Add_discounts.click()
 
@@ -125,4 +126,3 @@ add_patient_button = WebDriverWait(driver, 10).until(
     EC.element_to_be_clickable((By.XPATH, "//button[.//span[contains(text(),'Add Patient')]]"))
 )
 add_patient_button.click()
-input("wait")
